@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=88);
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 20%;
+	width: 55%;
+	height: 300px;
+	padding: 20px;
+	border: 5px solid #C6C3C3;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	opacity: 0.8;
+}
+.close {
+	margin-left: 680px;
+	position: relative;
+	width: 0.3em;
+	height: 1.5em;
+	background: #333;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	display: inline-block;
+}
+.close:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.3em;
+	height: 1.5em;
+	background: #333;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+</style>
+<body>
+<div style="background-image: url(image/bg1.jpg);width: 1372px;height: 360px;">
+  <h1 style="color: black;padding-top: 100px;margin-left: 350px;font-family: '幼圆'">登录拥有自己的空间，查看收藏的歌手</h1>
+  <a href = "javascript:void(0)" onclick = "openDialog()">
+  <input type="button" value="立即登录" style="height: 50px;width: 150px;margin
+														-top: 10px;margin-left: 550px;background-color: transparent;border: 1px solid #2F2E2E;border-radius: 3px;color: black">
+  </a>
+  <div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "closeDialog()"><span class="close"></span></a>
+    <h2 style="text-align: center;margin-top: 20px">账号密码登录</h2>
+    <form method="post" action="" style="text-align: center;margin-left: 240px;margin-top: 10px;">
+      <table cellspacing="30">
+        <tr>
+          <td><input type="text" name="username" id="username" value="" placeholder="账号"></td>
+        </tr>
+        <tr>
+          <td><input type="password" name="password" id="password" value="" placeholder="密码"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="登录" name="submit"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="fade" class="black_overlay"></div>
+</div>
+<div style="margin-top: 20px;margin-left: 70px">
+  <table cellpadding="12">
+    <tr>
+      <td><input type="button" value="热门" style="background-color: transparent;border: 1px solid #2F2E2E;border-radius: 3px;color: black"></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">A</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">B</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">C</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">D</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">E</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">F</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">G</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">H</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">I</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">J</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">K</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">L</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">M</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">N</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">O</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">P</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">Q</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">R</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">S</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">T</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">U</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">V</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">W</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">X</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">Y</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">Z</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">#</a></td>
+    </tr>
+	</table>
+	<table cellpadding="10">
+    <tr>
+      <td><input type="button" value="全部" style="background-color: transparent;border: 1px solid #2F2E2E;border-radius: 3px;color: black"></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">内地</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">港台</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">欧美</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">日本</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">韩国</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">其他</a></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="全部" style="background-color: transparent;border: 1px solid #2F2E2E;border-radius: 3px;color: black"></td>
+      <td><a href="Msinger.html" target="singer" style="text-decoration: none;color: #2F2E2E">男</a></td>
+      <td><a href="Fsinger.html" target="singer" style="text-decoration: none;color: #2F2E2E">女</a></td>
+      <td><a href="Gsinger.html" target="singer" style="text-decoration: none;color: #2F2E2E">组合</a></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="全部" style="background-color: transparent;border: 1px solid #2F2E2E;border-radius: 3px;color: black"></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">流行</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">嘻哈</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">摇滚</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">电子</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">民谣</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">轻音乐</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">爵士</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">古典</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">乡村</a></td>
+      <td><a href="" style="text-decoration: none;color: #2F2E2E">蓝调</a></td>
+    </tr>
+  </table>
+</div>
+<div style="margin-top: 20px">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td height="500"><iframe name="singer" src="Msinger.html" frameborder="0" width="100%" height="100%" ></iframe></td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+        $(function(){
+        })
+        function openDialog(){
+            document.getElementById('light').style.display='block';
+            document.getElementById('fade').style.display='block'
+        }
+        function closeDialog(){
+            document.getElementById('light').style.display='none';
+            document.getElementById('fade').style.display='none'
+        }
+    </script>
+</body>
+</html>

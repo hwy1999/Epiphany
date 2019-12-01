@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音乐盒子</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/music.css">
+</head>
+<body class="blueHour">
+	<div class="container" style="margin-top: 20px">
+		<div class="music-list">
+			<div class="title"><h2>歌词</h2></div>
+			<div class="list">
+				<ul>
+					<li>后来的我们（电影《后来的我们》片名曲） - 五月天 (Mayday)</li>
+
+<li>词：阿信&nbsp;曲：怪兽</li>
+<li>然后呢 他们说你的心 似乎痊愈了 也开始有个人 为你守护着</li>
+<li>我该心安或是 心痛呢 然后呢 其实我的日子 也还可以呢</li>
+<li>我连伤感都是 奢侈的 我一想念 你就那么近</li>
+<li>除了回忆肆虐 的某些时刻 庆幸还有眼泪 冲淡苦涩 而那些昨日 依然缤纷着</li> 
+<li>它们都有我 细心收藏着 也许你还记得 也许你都忘了 也不是那么 重要了</li>
+<li>只期待 后来的你 能快乐 那就是 后来的我 最想的 后来的我们 依然走着</li>
+<li>只是不再并肩了 朝各自的人生 追寻了</li>
+<li>还亲爱的 回忆我们共同 走过的曲折 是那些带我们 来到了这一刻</li>
+<li>让珍贵的人生 有失有得 用新的幸福 把遗憾包着 就这么朝着 未来前进了</li>
+<li>有再多的不舍 也要狠心割舍 别回头看我 亲爱的</li>
+<li>只期待 后来的你 能快乐 那就是 后来的我 最想的</li>
+<li>后来的我们 依然走着 只是不再并肩了</li>
+				</ul>
+			</div>
+		</div>
+		<audio id="audio">
+			<source title="后来的我们" data-img="image/hldwm1.jpg" src="music/后来的我们.mp3">
+			<source id="wm" title="我们" data-img="image/wm.jpg" src="music/我们.mp3">
+			<source title="答案" data-img="image/da.jpg" src="music/答案.mp3">
+			<source title="等你下课" data-img="image/dnxk1.jpg" src="music/等你下课.mp3">
+			<source title="岁月神偷" data-img="image/syst.jpg" src="music/岁月神偷.mp3">
+			<source title="戒烟" data-img="image/jy.jpg" src="music/戒烟.mp3">
+		</audio>
+		<div class="music">
+			<div class="header">
+				<h1 id = "title"><small>音乐播放器</small></h1>
+			</div>
+			<div class="fengmian">
+				<img src="image/music.png" id="music-img" alt="">
+			</div>
+			<div id="lrc">
+				Nice to meet you !
+			</div>
+			<div class="jindu">
+				<span id="music-bar">
+					<span id="load-bar"></span>
+					<span id="played-bar"></span>
+				</span>
+				<span id="voice-bar">
+					<span id="voiced-bar"></span>
+				</span>
+				<div id="time">
+					<span id="current-time">0:00</span>
+					<span id="total-time"></span>
+				</div>
+			</div>
+			<div class="controls">
+				<a id="xunhuan" href="javascript:;">循环</a>
+				<a id="prev" href="javascript:;"><</a>
+				<a id="play" href="javascript:;"><strong>▷</strong></a>
+				<a id="next" href="javascript:;">></a>
+				<a id="jingyin" href="javascript:;">静音</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/music.js"></script>
+	<script>
+		// 回调函数将返回的内容添加到结果区（需要在页面加载完后加载上，为后面执行回调）
+		function jsonpcallback (rs) {
+			var resultHtml = '歌曲：<strong>' + rs.result.songs[0].name + '</strong>' + 
+							 '歌手：<strong>' + rs.result.songs[0].artists[0].name + '</strong>' +
+							 '<a href="javascript:;" id="to-play">立即播放</a>';	
+			result.innerHTML = resultHtml;
+			result.setAttribute('data-audio', rs.result.songs[0].audio);
+			result.setAttribute('data-img', rs.result.songs[0].album.picUrl);
+			result.setAttribute('data-music', rs.result.songs[0].name);
+			result.setAttribute('data-singer', rs.result.songs[0].artists[0].name);
+			result.style.opacity = '1';
+
+		};
+	</script>
+</body>
+</html>

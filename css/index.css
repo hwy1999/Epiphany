@@ -1,0 +1,50 @@
+/* CSS Document */
+.paihang a{
+	color: white;
+}
+.paihang a:hover{
+	color: black;
+}
+#lun{
+	position: relative;
+	width:100%;
+	height:600px;
+	box-shadow: 0px 0px 5px #c1c1c1;
+	margin:0 auto 0 auto;/*上0，左右居中，下0*/
+	overflow:hidden;/*超出隐藏*/
+}
+.slide a{
+	text-align: center;
+	font-size: 300%;
+	color: ghostwhite;
+	
+}
+.btnLeft{
+	width: 30px;
+    height: 80px;
+    position: absolute;
+    left:3%;
+    top: 40%;
+    background:rgba(225,225,225,.5);
+    border-radius:10%;
+    z-index:2;
+}
+.btnLeft:hover{
+	background: gainsboro;
+}
+.btnRight{
+	width: 30px;
+    height: 80px;
+    position: absolute;
+    left:94%;
+    top: 40%;
+    background:rgba(225,225,225,.5);
+    border-radius:10%;
+    z-index:2;
+}
+.btnRight:hover{
+	background: gainsboro;
+}
+.list{
+	
+}
